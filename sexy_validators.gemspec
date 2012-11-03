@@ -14,4 +14,5 @@ Gem::Specification.new do |gem|
   gem.name          = "sexy_validators"
   gem.require_paths = ["lib"]
   gem.version       = SexyValidators::VERSION
+  gem.add_dependency("activemodel", ">=0")
 end
