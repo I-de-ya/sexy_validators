@@ -1,6 +1,10 @@
 # SexyValidators
 
-TODO: Write a gem description
+This gem is made for keeping helpfull validators.
+
+You can read about sexy validations for Rails 3 here http://thelucid.com/2010/01/08/sexy-validation-in-edge-rails-rails-3/
+
+This gem is very early. It can contain many bugs. Feel free to inform us about them.
 
 ## Installation
 
@@ -18,7 +22,19 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+This gem contains several validators. They are discribed below.
+
+### Slug
+
+This validator checks whether string contains only digits, dashes, letters, underscores and start not from digit.
+
+    validates :slug, :slug => true
+
+### Field changes
+
+This validator prevent you from saving changed attribute on custom action (in example - on "update")
+
+    validates :slug, :change => false, :on => :update
 
 ## Contributing
 
