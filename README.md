@@ -28,13 +28,13 @@ This gem contains several validators. They are discribed below.
 
 This validator checks whether string contains only digits, dashes, letters, underscores and start not from digit.
 
-    validates :slug, :slug => true
+    validates :slug, slug: true
 
 ### Field changes
 
 This validator prevent you from saving changed attribute on custom action (in example - on "update")
 
-    validates :slug, :change => false, :on => :update
+    validates :slug, change: false, on: :update
 
 ## Contributing
 
